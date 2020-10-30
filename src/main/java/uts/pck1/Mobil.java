@@ -4,7 +4,7 @@ public class Mobil{
 	//atribut
 	private String merk;
 	private String warna;
-	private String jenisBan;
+	private Ban jenisBan;
 	private int jumlahBan;
 	private double isiTangki;
 	
@@ -12,21 +12,21 @@ public class Mobil{
 	public Mobil(){
 		merk = "Toyota Avanza";
 		warna = "putih";
-		jenisBan="Good Year";
+		jenisBan=new Ban();
 		jumlahBan=4;
-		isiTangki=45.0;
+		isiTangki=45;
 	}
-	public Mobil(String merk, String warna, String jenisBan, int jumlahBan, double isiTangki){
+	public Mobil(String merk, String warna, Ban jenisBan, int jumlahBan, double isiTangki){
 		this.merk = merk;
 		this.warna = warna;
-		this.jenisBan= jenisBan;
+		this.jenisBan= new Ban(jenisBan);
 		this.jumlahBan=jumlahBan;
 		this.isiTangki= isiTangki;
 	}
 	public Mobil(Mobil M){
 		merk = M.merk;
 		warna = M.warna;
-		jenisBan=M.jenisBan;
+		jenisBan=new Ban(M.jenisBan);
 		jumlahBan =M.jumlahBan;
 		isiTangki=M.isiTangki;
 	}
@@ -38,7 +38,7 @@ public class Mobil{
 	public void setWarna(String warna){
 		this.warna = warna;
 	}
-	public void setJenisBan(String jenisBan){
+	public void setJenisBan(Ban jenisBan){
 		this.jenisBan= jenisBan;
 	}
 	public void setJumlahBan(int jumlahBan){
@@ -54,7 +54,7 @@ public class Mobil{
 	public String getWarna( ){
 		return warna;
 	}
-	public String getJenisBan(){
+	public Ban getJenisBan(){
 		return jenisBan;
 	}
 	public int getJumlahBan(){
@@ -74,11 +74,12 @@ public class Mobil{
 	public String toString(){
 		return "Mobil "+merk+" warna "+warna+", jumlah ban "+jumlahBan+ " merk "+ jenisBan+", isi tangki "+isiTangki+" liter";
 	}
+	
 	//method ini tidak boleh dihapus atau diubah
 	public boolean equals(Object o){
 		if (o instanceof Mobil){
 			Mobil mbl = (Mobil) o;
-			return (getMerk().equalsIgnoreCase(mbl.getMerk())&& getWarna().equalsIgnoreCase(mbl.getWarna())&&getJenisBan().equalsIgnoreCase(mbl.getJenisBan())&&getJumlahBan()==mbl.getJumlahBan() && getIsiTangki()==mbl.getIsiTangki() );
+			return (getMerk().equalsIgnoreCase(mbl.getMerk())&& getWarna().equalsIgnoreCase(mbl.getWarna())&&getJenisBan().equals(mbl.getJenisBan())&&getJumlahBan()==mbl.getJumlahBan() && getIsiTangki()==mbl.getIsiTangki() );
 		}
 		return false;
 	}

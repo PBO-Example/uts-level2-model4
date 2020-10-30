@@ -1,11 +1,20 @@
-# UTS Praktikum Level 1 dari 4 Level
+# Selamat!!! Anda sekarang sudah di UTS Praktikum Level 2 dari 4 Level
 Baca instruksi yang diberikan dengan baik.
 
 
 ## Kelas Diagram
-![Image of UTS Level 1](http://api.puro.del.ac.id/v1/file/94ad1691c1afc2246c05c3fff740c4f7)
->Realisasikan kelas diagram di atas ke dalam bahasa pemrograman Java, lengkapi dengan konstruktor tanpa parameter, konstruktor dengan parameter, kopi konstruktor, serta setter dan getter. Gunakan template yang disediakan di 
+![Image of UTS Level 2](http://api.puro.del.ac.id/v1/file/787fb11bc022145d0ad58c24efbf55ab)
+>Realisasikan kelas Mobil dan kelas Ban yang ada pada kelas diagram di atas ke dalam bahasa pemrograman Java. Untuk masing-masing kelas lengkapi dengan konstruktor tanpa parameter, konstruktor dengan parameter, kopi konstruktor, serta setter dan getter. Gunakan template yang disediakan di 
 **src\main\java\uts**.
+
+>**Anda boleh menggunakan (menyalin) kode program yang sudah anda hasilkan dari level 1**
+
+>**Perhatikan bahwa, pada level 2 ini, tipe atribut jenisBan adalah Ban.**
+
+>**Untuk mendapatkan nilai sempurna pada level ini, konsentrasi menyesuaikan kode program kelas LiftPenumpang.java yang anda kerjakan pada level 1 sehingga semua konstruktor dan method dapat menerima atribut jenisBan yang bertipe Ban (bukan String).**
+
+>**Perhatikan bahwa keluaran method toString() dari kelas Mobil perlu diupdate. Silahkan cek gambar yang ada pada rubrik penilaian no. 6**
+
 
 
 ## Rubrik Penilaian 
@@ -54,7 +63,7 @@ Method ini akan mengembalikan sebuah pesan.
 		> gradle test --tests TestMobil.testMaju
 
 6. **[Poin 15]** program dilengkapi dengan method toString() yang akan menampilkan data di dalam objek Rumah. Perhatikan contoh keluaran yang diberikan.
-![Image of output of toString()](http://api.puro.del.ac.id/v1/file/f8908808c5629e77ad88a2105f6edfd8)	
+![Image of output of toString()](http://api.puro.del.ac.id/v1/file/302f1b9d63c74359f8ffa7457a1585e5)	
 	
 	> Perintah test: 
 	

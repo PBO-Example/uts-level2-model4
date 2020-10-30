@@ -2,40 +2,33 @@
 package uts.pck1;
 public class Ban{
 	//atribut
-	private String merk;
-	private int ukuran;
+	/*deklarasikan atribut di sini*/
 	
-	//kontruktor
-	public Ban(){
-		merk = "Good Year";
-		ukuran =185;
-	}
-	public Ban(String merk, int ukuran){
-		this.merk = merk;
-		this.ukuran =ukuran;
-	}
-	public Ban(Ban b){
-		merk = b.merk;
-		ukuran =b.ukuran;
-	}
+	//konstruktor
+	/*tulis konstruktor tanpa parameter di sini*/
+	
+	
+	/*tulis konstruktor dengan  parameter di sini*/
+	
+	
+	/*tulis kopi konstruktor di sini*/
 	
 	//setter
-	public void setMerk(String merk){
-		this.merk = merk;
-	}
-	public void setUkuran(int ukuran){
-		this.ukuran =ukuran;
-	}
+	/*tulis semua setter di sini*/
+	
+	
+	
+	
 	//getter
-	public String getMerk(){
-		return merk;
-	}
-	public int getUkuran(){
-		return ukuran;
-	}
-	public String toString(){
-		return merk+ " ukuran "+ukuran;
-	}
+	/*tulis semua getter di sini*/
+	
+	
+	
+	/*tulis method toString() di sini*/
+	/*Method toString() akan mengembalikan sebuah string, baca file Readme.md*/
+	
+	
+	
 	
 	//method ini tidak boleh dihapus atau diubah
 	public boolean equals(Object o){
